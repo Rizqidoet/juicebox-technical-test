@@ -12,8 +12,6 @@ type WalkthroughSwiperProps = {
 
 export default function WalkthroughSwiper({ onNext }: WalkthroughSwiperProps) {
   const [activeIndex, setActiveIndex] = useState(0);
-  console.log('activeIndex', activeIndex);
-  
   const slides = [
     {
       text: `Professionals around the world shared how they feel about technology and I’ve listened. Now it's your turn.`,
@@ -26,8 +24,6 @@ export default function WalkthroughSwiper({ onNext }: WalkthroughSwiperProps) {
       final: true,
     },
   ];
-  console.log('slides', slides.length);
-
   return (
       <>
       <div className="h-full text-center flex flex-col pb-[10%]">
