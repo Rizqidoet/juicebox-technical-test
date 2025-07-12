@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+/* GRAPHIK REGULAR - weight 400 */
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik/e72bba62e4760c045a231a26738e7a41.eot');
+  src: local('Graphik-Regular'),
+       url('/fonts/Graphik/e72bba62e4760c045a231a26738e7a41.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Graphik/e72bba62e4760c045a231a26738e7a41.woff2') format('woff2'),
+       url('/fonts/Graphik/e72bba62e4760c045a231a26738e7a41.woff') format('woff'),
+       url('/fonts/Graphik/e72bba62e4760c045a231a26738e7a41.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* GRAPHIK MEDIUM - weight 500 */
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik/Graphik-Medium.eot');
+  src: local('Graphik-Medium'),
+       url('/fonts/Graphik/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Graphik/Graphik-Medium.woff2') format('woff2'),
+       url('/fonts/Graphik/Graphik-Medium.woff') format('woff'),
+       url('/fonts/Graphik/Graphik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* GRAPHIK BOLD - weight 700 */
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik/177dfc527bd44fad48eb07c66fb3cc41.eot');
+  src: local('Graphik-Bold'),
+       url('/fonts/Graphik/177dfc527bd44fad48eb07c66fb3cc41.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Graphik/177dfc527bd44fad48eb07c66fb3cc41.woff2') format('woff2'),
+       url('/fonts/Graphik/177dfc527bd44fad48eb07c66fb3cc41.woff') format('woff'),
+       url('/fonts/Graphik/177dfc527bd44fad48eb07c66fb3cc41.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* PP AGRANDIR REGULAR - weight 400 */
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('/fonts/PP-Agrandir/PPAgrandir-Regular.eot');
+    src: local('PP Agrandir Regular'), local('PPAgrandir-Regular'),
+        url('/fonts/PP-AgrandirPPAgrandir-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/PP-AgrandirPPAgrandir-Regular.woff2') format('woff2'),
+        url('/fonts/PP-AgrandirPPAgrandir-Regular.woff') format('woff'),
+        url('/fonts/PP-Agrandir/PPAgrandir-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* PP AGRANDIR MEDIUM - weight 500 */
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('/fonts/PP-Agrandir/PPAgrandir-Medium.eot');
+    src: local('PP Agrandir Medium'), local('PPAgrandir-Medium'),
+        url('/fonts/PP-Agrandir/PPAgrandir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/PP-Agrandir/PPAgrandir-Medium.woff2') format('woff2'),
+        url('/fonts/PP-Agrandir/PPAgrandir-Medium.woff') format('woff'),
+        url('/fonts/PP-Agrandir/PPAgrandir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-Buch.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-BuchKursiv.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-Dreiviertelfett.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-Extrafett.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-ExtrafettKursiv.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-Extraleicht.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-ExtraleichtKursiv.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-Kraftig.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-KraftigKursiv.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sohne';
+  src: url('/fonts/Sohne/Sohne-LeichtKursiv.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bagoss';
+  src: url('/fonts/Bagoss/BagossTRIALVF.ttf') format('truetype');
+  font-weight: 100 900; /* mendukung rentang */
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagination .swiper-pagination-bullet {
+  background-color: #d1d5db; /* Tailwind gray-300 */
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px !important;
+  border-radius: 50%;
+}
+
+.pagination .swiper-pagination-bullet-active {
+  background-color: #CDAAFF;
+}
