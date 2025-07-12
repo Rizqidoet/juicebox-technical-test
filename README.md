@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Juicebox 2024 - Technical Assessment
 
-## Getting Started
+This is a Next.js project using custom fonts, Lottie animations, and Swiper.js to deliver a dynamic multi-step form interface based on Juicebox design.
 
-First, run the development server:
+---
 
+## 🔧 Tech Stack
+
+| Tool        | Version     |
+|-------------|-------------|
+| Node.js     | 22.14.0     |
+| npm         | 10.9.2      |
+| Next.js     | 15.3.5      |
+| React       | 19.0.0      |
+| TailwindCSS | 3.4.17      |
+
+---
+
+## 🚀 Getting Started
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek secara lokal:
+
+### 1. Clone repository ini
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Rizqidoet/juicebox-technical-test.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Masuk ke folder project
+```bash
+cd juicebox-technical-test
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Install dependencies
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Jalankan project
+```bash
+npm run dev
+```
 
-## Learn More
+Server akan berjalan di `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Struktur Folder
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+.
+├── public/
+│   ├── fonts/          # Custom fonts (Graphik, Sohne, etc)
+│   ├── lottie/         # JSON animation files
+│   └── ...
+├── src/
+│   ├── app/            # Next.js app directory (layout, pages)
+│   ├── components/     # Reusable UI components
+│   ├── styles/         # Global styles (Tailwind + fonts)
+│   └── ...
+├── tailwind.config.ts
+├── README.md
+└── package.json
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Fitur
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ Custom font dengan `@font-face`
+- ✅ Lottie animation menggunakan `lottie-react`
+- ✅ Swiper untuk walkthrough step
+- ✅ Responsive layout dengan TailwindCSS
+- ✅ Mobile-first design sesuai Figma
+
+---
+
+## 🧠 Catatan Tambahan
+
+- Semua font diletakkan di `/public/fonts` agar mudah diakses oleh global styles.
+- File animasi `.json` diletakkan di `/public/lottie` dan diakses via `fetch`.
+- Proyek ini menggunakan **App Router (Next.js 13+)**, bukan `pages`.
+
+---
