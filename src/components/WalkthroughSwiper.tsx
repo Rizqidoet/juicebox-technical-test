@@ -14,13 +14,13 @@ export default function WalkthroughSwiper({ onNext }: WalkthroughSwiperProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const slides = [
     {
-      text: `Professionals around the world shared how they feel about technology and I’ve listened. Now it's your turn.`,
+      text: `Professionals around the world shared how they feel about technology and I've listened. Now it's your turn.`,
     },
     {
-      text: `I’ll ask you a handful of meaningful questions and compare your responses with people in your industry.`,
+      text: `I'll ask you a handful of meaningful questions and compare your responses with people in your industry.`,
     },
     {
-      text: `You’ll get insights into current industry sentiments and a reality check about technology in a few minutes. Deal? Great!`,
+      text: `You'll get insights into current industry sentiments and a reality check about technology in a few minutes. Deal? Great!`,
       final: true,
     },
   ];
@@ -37,9 +37,9 @@ export default function WalkthroughSwiper({ onNext }: WalkthroughSwiperProps) {
             {slides.map((slide, i) => {
               return (
                 <>
-                  <div className='text-center'>
+                  <div className="text-center">
                     <SwiperSlide key={i}>
-                      <div className='h-[10rem]'>
+                      <div className="h-[10rem]">
                         <p className="text-xl font-bagoss font-normal text-white leading-snug">
                           {slide.text.length <= 55 ? (
                             slide.text
