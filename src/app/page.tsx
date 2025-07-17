@@ -10,7 +10,7 @@ export default function HomePage() {
   const [step, setStep] = useState(1);
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-black text-white px-3">
-      <section className="min-h-screen grid grid-rows-[10%_50%_40%]">
+      <section className="min-h-screen grid grid-rows-[10%_50%_40%] max-w-80">
         <div className="grid grid-cols-3 content-center">
           <div className="text-start">
             {
