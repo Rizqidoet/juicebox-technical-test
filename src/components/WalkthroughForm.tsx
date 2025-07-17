@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 type WalkthroughFormProps = {
   step: number;
@@ -8,8 +8,8 @@ type WalkthroughFormProps = {
 };
 
 export default function WalkthroughForm({ step, setStep }: WalkthroughFormProps) {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleNext = () => {
     if (step === 3 && name.trim()) setStep(4);
@@ -38,8 +38,8 @@ export default function WalkthroughForm({ step, setStep }: WalkthroughFormProps)
                 disabled={isContinueDisabled}
                 className={`mt-auto py-3 font-medium ${
                   isContinueDisabled
-                    ? 'w-full bg-white text-brandblack font-normal rounded-19 font-sohne font-medium opacity-50 cursor-not-allowed'
-                    : 'w-full bg-white text-brandblack font-normal rounded-19 font-sohne font-medium hover:bg-gray-200 transition'
+                    ? "w-full bg-white text-brandblack font-normal rounded-19 font-sohne font-medium opacity-50 cursor-not-allowed"
+                    : "w-full bg-white text-brandblack font-normal rounded-19 font-sohne font-medium hover:bg-gray-200 transition"
                 }`}
               >
                 Continue
@@ -65,8 +65,8 @@ export default function WalkthroughForm({ step, setStep }: WalkthroughFormProps)
                 disabled={isContinueDisabled}
                 className={`mt-auto py-3 font-medium ${
                   isContinueDisabled
-                    ? 'w-full bg-white text-brandblack font-normal rounded-19 font-sohne font-medium opacity-50 cursor-not-allowed'
-                    : 'w-full bg-white text-brandblack font-normal rounded-19 font-sohne font-medium hover:bg-gray-200 transition'
+                    ? "w-full bg-white text-brandblack font-normal rounded-19 font-sohne font-medium opacity-50 cursor-not-allowed"
+                    : "w-full bg-white text-brandblack font-normal rounded-19 font-sohne font-medium hover:bg-gray-200 transition"
                 }`}
               >
                 Continue
@@ -78,7 +78,7 @@ export default function WalkthroughForm({ step, setStep }: WalkthroughFormProps)
          {step === 5 && (
           <>
             <span className="font-bagoss font-normal text-[16px]">
-              Thanks, <span className="font-semibold">{name || 'there'}</span>! Now, it&apos;s time to get a reality check.
+              Thanks, <span className="font-semibold">{name || "there"}</span>! Now, it&apos;s time to get a reality check.
               <br />
               <br />
               This will take 2-3 minutes.

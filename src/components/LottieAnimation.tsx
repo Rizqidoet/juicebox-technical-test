@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Lottie from 'lottie-react';
-import animationData from '@/assets/lottie/JB2G_Lottie.json';
+import Lottie from "lottie-react";
+import animationData from "@/assets/lottie/JB2G_Lottie.json";
 
 export default function LottieAnimation() {
   return (

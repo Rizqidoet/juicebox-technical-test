@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-import { useState } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import { useState } from "react";
 
 type WalkthroughSwiperProps = {
   onNext: () => void;
@@ -14,13 +14,13 @@ export default function WalkthroughSwiper({ onNext }: WalkthroughSwiperProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const slides = [
     {
-      text: `Professionals around the world shared how they feel about technology and I've listened. Now it's your turn.`,
+      text: `Professionals around the world shared how they feel about technology and I"ve listened. Now it"s your turn.`,
     },
     {
-      text: `I'll ask you a handful of meaningful questions and compare your responses with people in your industry.`,
+      text: `I will ask you a handful of meaningful questions and compare your responses with people in your industry.`,
     },
     {
-      text: `You'll get insights into current industry sentiments and a reality check about technology in a few minutes. Deal? Great!`,
+      text: `You"ll get insights into current industry sentiments and a reality check about technology in a few minutes. Deal? Great!`,
       final: true,
     },
   ];
@@ -65,12 +65,12 @@ export default function WalkthroughSwiper({ onNext }: WalkthroughSwiperProps) {
           }}
           className={`mt-auto font-medium py-3 ${
             activeIndex === (slides.length - 1)
-              ? 'w-full bg-white text-brandblack font-bagoss font-normal rounded-19 font-medium'
-              : 'w-full bg-brandblack text-white font-bagoss font-normal rounded-19 font-medium border-solid border-2 border-white opacity-50 cursor-not-allowed'
+              ? "w-full bg-white text-brandblack font-bagoss font-normal rounded-19 font-medium"
+              : "w-full bg-brandblack text-white font-bagoss font-normal rounded-19 font-medium border-solid border-2 border-white opacity-50 cursor-not-allowed"
           }`}
           disabled={activeIndex !== (slides.length - 1)}
         >
-          {activeIndex === (slides.length - 1) ? 'Get started' : 'Continue'}
+          {activeIndex === (slides.length - 1) ? "Get started" : "Continue"}
         </button>
       </div>
       </>

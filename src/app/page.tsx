@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import LottieAnimation from "@/components/LottieAnimation";
 import WalkthroughForm from "@/components/WalkthroughForm";
@@ -19,7 +19,7 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                 </svg>
 
-              </button> : ''
+              </button> : ""
             }
           </div>
           <div className="text-center">
